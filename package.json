@@ -1,0 +1,16 @@
+{
+    "name": "iconv",
+    "description": "iconv binding for node, string conversion utility",
+    "version": "0.3.0",
+    "author": "Ben Noordhuis",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/clement/node-iconv.git"
+    },
+    "main": "./lib/iconv.node",
+    "engines": { "node":  ">=0.3.0" },
+    "scripts": {
+        "preinstall": "./build.sh",
+        "test": "node tests/*"
+    }
+}
