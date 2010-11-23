@@ -2,29 +2,19 @@
 
 Text recoding in JavaScript for fun and profit!
 
-## Cloning the repository
+## Installing
 
 If you are developing against node.js v0.3.0:
 
-	git clone git://github.com/bnoordhuis/node-iconv.git
+	npm install iconv@0.3.0
 
 If you are developing against the older but stable node.js v0.2.x:
 
-	git clone -b v0.2.x git://github.com/bnoordhuis/node-iconv.git
+    npm install iconv@0.2.0
 
 Both versions of node.js are fully supported. Once v0.3.0 goes stable,
 support for v0.2.x will be slowly phased out but it will receive
 bug fixes and minor updates for the foreseeable future.
-
-## Compiling
-
-To compile and install the module, type:
-
-	make install NODE_PATH=/path/to/nodejs
-
-NODE_PATH will default to `/usr/local` if omitted.
-
-Note that you do not need to have a copy of libiconv installed to use this module.
 
 ## Usage
 
@@ -41,7 +31,7 @@ Encode from one character encoding to another:
 	assert.equals(buffer.inspect(), buffer2.inspect());
 	// do something useful with the buffers
 
-Look at test.js for more examples and node-iconv's behaviour under error conditions.
+Look at `tests/test.js` for more examples and node-iconv's behaviour under error conditions.
 
 ## Notes
 
